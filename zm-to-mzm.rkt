@@ -3,10 +3,12 @@
 
 (define (to-mzm str)
   (match-define (list code cn) (string-split str))
-  (define code/lst (string->list code))
-  (define ncode/lst (for/list ([c code-lst]
-                               #:do [(define cnum (- (char->integer c) 96))])
-                      (hash-ref tables cnum)))
+  (define code/lst
+    (string->list code))
+  (define ncode/lst
+    (for/list ([c code/lst]
+               #:do [(define cnum (- (char->integer c) 96))])
+      (hash-ref tables cnum)))
   (define ncode (list->string ncode/lst))
   (string-join (list ncode cn))
   )
