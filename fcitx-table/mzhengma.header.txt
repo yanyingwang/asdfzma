@@ -1,4 +1,3 @@
-;fcitx Version 0x03 Table file
 KeyCode=abcdefghijklmnopqrstuvwxyz
 Length=4
 Pinyin=@

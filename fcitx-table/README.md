@@ -7,4 +7,4 @@ how to gen
 1. place `**.conf` file to `~/.config/fcitx/table`.
 2. run `mzhengma.txt.gen.sh`
 3. run `apt install fcitx-tools`
-4. run `txt2mb mzhengma.txt mzhengma.md`
+4. run `txt2mb mzhengma.txt mzhengma.mb`

@@ -46,7 +46,7 @@
   (open-input-file "data-zm.txt"))
 
 (with-output-to-file "data-mzm.txt" #:exists 'replace
-  (lambda () (printf "")))
+  (lambda () (printf "\n")))
 
 (with-output-to-file "data-mzm.txt" #:exists 'append
   (lambda ()
