@@ -10,7 +10,7 @@
                #:do [(define cnum (- (char->integer c) 96))])
       (hash-ref tables cnum)))
   (define ncode (list->string ncode/lst))
-  (string-join (list ncode cn))
+  (string-append (string-join (list ncode cn)) "\n")
   )
 
 (define tables
@@ -44,7 +44,21 @@
 
 (define zm-port
   (open-input-file "data-zm.txt"))
-(to-mzm (read-line zm-port))
+
+(with-output-to-file "data-mzm.txt" #:exists 'replace
+  (lambda () (printf "")))
+
+(with-output-to-file "data-mzm.txt" #:exists 'append
+  (lambda ()
+    (let loop ([str (read-line zm-port)])
+      (unless (eof-object? str)
+        (printf (to-mzm str))
+        (loop (read-line zm-port))))))
+
+
+
+
+
 
 
 #|
@@ -52,11 +66,11 @@
 -- -- -- --  ++ ++  -- -- -- ;;
 -- -- -- --  ++ ++  -- .< .> /?
 
-08 07 06 05  13 14  15 16 17 18
-04 03 02 01  19 09  10 11 12 ;;
-23 22 21 20  24 25  26 .< .> /?
-
 Q- W- E- R-  +T Y+  U- I- O- P-
 A- S- D- F-  +G H+  J- K- L- ;;
 Z- X- C- V-  +B N+  M- .< .> /?
+
+08 07 06 05  13 14  15 16 17 18
+04 03 02 01  19 09  10 11 12 ;;
+23 22 21 20  24 25  26 .< .> /?
 |#

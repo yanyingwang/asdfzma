@@ -1,15 +1,4 @@
-;fcitx Version 0x03 Table file
-KeyCode=abcdefghijklmnopqrstuvwxyz
-Length=4
-Pinyin=@
-PinyinLength=4
-Prompt=&
-ConstructPhrase=^
-[Rule]
-e2=p11+p12+p21+p22
-e3=p11+p21+p22+p31
-a4=p11+p21+p31+n11
-[Data]f 一
+f 一
 ff 一下
 fffs 一无可取
 fffw 无可无不可
