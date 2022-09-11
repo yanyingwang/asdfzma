@@ -27,7 +27,7 @@ Z- X- C- V-  +B N+  M- .< .> /?
 
 ## how to run and gen dict data
 1. run `/home/yanying/mzhengma/zm-to-mzm.rkt` to gen `data.mzm.txt`
-2. check `README.md` of each sub directories.
+2. then check `README.md` of each sub directories for next.
 
 ## cheat sheet
 ![cheat-sheet](https://raw.githubusercontent.com/yanyingwang/mzhengma/master/cheat-sheet.jpg)
