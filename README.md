@@ -31,3 +31,5 @@ Z- X- C- V-  +B N+  M- .< .> /?
 1. run `/home/yanying/mzhengma/zm-to-mzm.rkt` to gen `data.mzm.txt`
 2. check `README.md` of each sub directories.
 
+
+![cheat-sheet](https://raw.githubusercontent.com/yanyingwang/mzhengma/master/cheat-sheet.jpg)

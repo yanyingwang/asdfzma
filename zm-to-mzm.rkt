@@ -3,7 +3,7 @@
 
 (define (get-mapping)
   (for/list ([i (range 97 123)])
-    (list (integer->char i) (hash-ref tables (- i 96)))))
+    (list (char-upcase (integer->char i)) (hash-ref tables (- i 96)))))
 
 (define (to-mzm str)
   (match-define (list code cn) (string-split str))
@@ -27,20 +27,21 @@
    )
   )
 
-(define zm-port
-  (open-input-file "data.zm.txt"))
+(define (write-to-mzm.txt)
+  (define zm-port
+    (open-input-file "data.zm.txt"))
+  (with-output-to-file "data.mzm.txt" #:exists 'replace
+    (lambda () (printf "\n")))
+  (with-output-to-file "data.mzm.txt" #:exists 'append
+    (lambda ()
+      (let loop ([str (read-line zm-port)])
+        (unless (eof-object? str)
+          (printf (to-mzm str))
+          (loop (read-line zm-port))))))
+  )
 
-(with-output-to-file "data.mzm.txt" #:exists 'replace
-  (lambda () (printf "\n")))
 
-(with-output-to-file "data.mzm.txt" #:exists 'append
-  (lambda ()
-    (let loop ([str (read-line zm-port)])
-      (unless (eof-object? str)
-        (printf (to-mzm str))
-        (loop (read-line zm-port))))))y
 
-#;(hash-ref tables 01)
 
 #|
 -- -- -- --  ++ ++  -- -- -- --
@@ -58,13 +59,7 @@ Z- X- C- V-  B- N-  M- .< .> /?
 18 17 16 15  14 19  20 21 22 23
 04 03 02 01  13 09  10 11 12 ;;
 08 07 06 05  24 25  26 .< .> /?
-
-
 |#
-
-
-
-
 
 #;(define table-char
   (list
