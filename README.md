@@ -32,4 +32,5 @@ Z- X- C- V-  +B N+  M- .< .> /?
 2. check `README.md` of each sub directories.
 
 
+## cheat sheet
 ![cheat-sheet](https://raw.githubusercontent.com/yanyingwang/mzhengma/master/cheat-sheet.jpg)
