@@ -10,16 +10,18 @@ If I am right about this, then people who don't know a single Chinese character 
 
 Then there comes a question: if they want to use the Ming programing language, should they learn Chinese first?
 
-Yes, they should. But not in a common way. I conceive they don't need to learn how to listen and speak Chinese, they should just focus on the Reading and Writing.
+Yes, they should. But not in a common way. I conceive they don't need to learn how to listen and speak Chinese, they should just focus on Reading and Writing.
 
 
-Why is that? Because Chinese speaking nearly has nothing to do with Writing, they can be looked at as two individual systems of Chinese, and furthermore, the Reading and Writing outweighs the Listening and speaking.
+Why is that? Because the Speaking of Chinese has nearly nothing to do with Writing, those two parts can be looked at as two individual systems of Chinese, and not to mention that Writing far outweigh Listening in Chinese.
 
-If you by any chance have seen Japanese characters, the Japanese people were ignoring the speaking of Chinese characters to some degree, and they just borrowed Chinese characters along with the connotations. And what you might not know is that a long time ago, Korean were speaking their own language, but able to write letters using classic Chinese characters to communicate with Chinese people.
+If you by any chance have seen Japanese characters, the fact is to some degree, the Japanese people were ignoring the speaking of Chinese characters along with borrowing Chinese characters and connotations. And besides, what you might not know is a long time ago, Korean were speaking their own language, while at the same time, some of them had gained the ability to write letters using Chinese characters to communicate with Chinese people with knowing nothing about the pronunciations of these characters.
 
-Fortunately, there already are some input methods to let people ignore the pronunciation of Chinese characters and just use the English letter as the standings for partitions of a Chinese character to constitute this Chinese character and input it.
+Nowadays, fortunately, there already are some input methods for people to ignore the pronunciation of Chinese characters and just directly use the English letters as the standings for partitions of Chinese characters to constitute the Chinese character they wanted and input it.
 
 (Zhengma(郑码) method)[https://en.wikipedia.org/wiki/Zhengma_method] is one kind of those method. For those people who have heard of [Wibi](https://en.wikipedia.org/wiki/Wubi_method) but not Zhengma, it's good for you to know that they are very similar things except Zhengma is more powerful to work with a larger set of Chinese characters.
+
+But for practical usage, Zhengma has a vital disadvantage comparing to Wubi, which is the partitions of characters are sorted by alphabet, not by their positions in keyboard, this has made it unintuitive to use. So I change the orders as a new searching DB for the Zhengma input method.
 
 
 # 原因
