@@ -19,12 +19,10 @@ If you by any chance have seen Japanese characters, the fact is to some degree, 
 
 Nowadays, fortunately, there already are some input methods for people to ignore the pronunciation of Chinese characters and just directly use the English letters as the standings for partitions of Chinese characters to constitute the Chinese character they wanted and input it.
 
-(Zhengma(郑码) method)[https://en.wikipedia.org/wiki/Zhengma_method] is one kind of those method. For those people who have heard of [Wibi](https://en.wikipedia.org/wiki/Wubi_method) but not Zhengma, it's good for you to know that they are very similar things except Zhengma is more powerful to work with a larger set of Chinese characters.
+[Zhengma(郑码) method](https://en.wikipedia.org/wiki/Zhengma_method) is one kind of those method. For those people who have heard of [Wibi](https://en.wikipedia.org/wiki/Wubi_method) but not Zhengma, it's good for you to know that they are very similar things except Zhengma is more powerful to work with a larger set of Chinese characters.
 
 But for practical usage, Zhengma has a vital disadvantage comparing to Wubi, which is the partitions of characters are sorted by alphabet, not by their positions in keyboard, this has made it unintuitive to use. So I change the orders as a new searching DB for the Zhengma input method.
 
-
-# 原因
 大部分的人都知道五笔，郑码跟五笔类似，也是一种形码输入方案。不同的是，郑码的字根拆分更加的规则有序（可以用来检索输入中日韩三国简繁汉字，五笔只检索输入简体中文）。另外，与五笔的ASDFG为横区、HJKL为竖区等等的划分区域方式不同，郑码是按照A-Z的字母排列顺序来分配字根的，也是因此，郑码在具体的使用上不如五笔直观。
 
 比如，以下为键盘中字母的排列分布：
@@ -36,6 +34,7 @@ Z- X- C- V-  +B N+  M- .< .> /?
 ```
 
 如果A为01，B为02，C为03，依次类推直到Z为26的话，那么对于郑码而言会有：
+
 
 01-08为横起笔的字根区；09-12为竖起笔的字根区；13-18为撇起笔的字根区；19-23为捺起笔的字根区；24-26为折起笔的字根区。
 
