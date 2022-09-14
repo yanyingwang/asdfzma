@@ -51,7 +51,7 @@ Z- X- C- V-  +B N+  M- .< .> /?
 2. then check `README.md` of each sub directories for next.
 
 ## inputing
-![input-cqm](https://raw.githubusercontent.com/yanyingwang/mzhengma/master/input-cqm.jpg)
+![input-cqm](https://raw.githubusercontent.com/yanyingwang/mzhengma/master/input-cqm.png)
 
 ## cheat sheet
 ![cheat-sheet](https://raw.githubusercontent.com/yanyingwang/mzhengma/master/cheat-sheet.jpg)
