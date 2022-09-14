@@ -6,7 +6,7 @@
 # why this project
 After I realize that Chinese is more suitable than English to be the interface for humans to use programming languages, I start to conceive the [Ming programming language](https://github.com/yanyingwang/ming).
 
-If I am right about this, then people who don't know a single Chinese character should also be possible to use the Chinese language interface to operate the Ming programming language.
+If I am right about this, then people who don't know a single Chinese character should also be possible to use the Chinese language interface to operate the Ming Programming Language.
 
 Then there comes a question: if they want to use the Ming programing language, should they learn Chinese first?
 
