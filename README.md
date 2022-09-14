@@ -3,7 +3,7 @@
 重新排版，重新命名之后的郑码。
 
 
-# why this project
+## why this project
 If you are looking for an English version of this passage, please go to <https://www.yanying.wang/2022/09/mzhengma.html>.
 
 大部分的人都知道五笔，郑码跟五笔类似，也是一种形码输入方案。不同的是，郑码的字根拆分更加的规则有序（可以用来检索输入中日韩三国简繁汉字，五笔只检索输入简体中文）。另外，与五笔的ASDFG为横区、HJKL为竖区等等的划分区域方式不同，郑码是按照A-Z的字母排列顺序来分配字根的，也是因此，郑码在具体的使用上不如五笔直观。
