@@ -1,8 +1,28 @@
 
 # 名郑码
-
 重新排版，重新命名之后的郑码。
 
+
+# why this project
+After I realize that Chinese is more suitable than English to be the interface for humans to use programming languages, I start to conceive the [Ming programming language](https://github.com/yanyingwang/ming).
+
+If I am right about this, then people who don't know a single Chinese character should also be possible to use the Chinese language interface to operate the Ming programming language.
+
+Then there comes a question: if they want to use the Ming programing language, should they learn Chinese first?
+
+Yes, they should. But not in a common way. I conceive they don't need to learn how to listen and speak Chinese, they should just focus on the Reading and Writing.
+
+
+Why is that? Because Chinese speaking nearly has nothing to do with Writing, they can be looked at as two individual systems of Chinese, and furthermore, the Reading and Writing outweighs the Listening and speaking.
+
+If you by any chance have seen Japanese characters, the Japanese people were ignoring the speaking of Chinese characters to some degree, and they just borrowed Chinese characters along with the connotations. And what you might not know is that a long time ago, Korean were speaking their own language, but able to write letters using classic Chinese characters to communicate with Chinese people.
+
+Fortunately, there already are some input methods to let people ignore the pronunciation of Chinese characters and just use the English letter as the standings for partitions of a Chinese character to constitute this Chinese character and input it.
+
+(Zhengma(郑码) method)[https://en.wikipedia.org/wiki/Zhengma_method] is one kind of those method. For those people who have heard of [Wibi](https://en.wikipedia.org/wiki/Wubi_method) but not Zhengma, it's good for you to know that they are very similar things except Zhengma is more powerful to work with a larger set of Chinese characters.
+
+
+# 原因
 大部分的人都知道五笔，郑码跟五笔类似，也是一种形码输入方案。不同的是，郑码的字根拆分更加的规则有序（可以用来检索输入中日韩三国简繁汉字，五笔只检索输入简体中文）。另外，与五笔的ASDFG为横区、HJKL为竖区等等的划分区域方式不同，郑码是按照A-Z的字母排列顺序来分配字根的，也是因此，郑码在具体的使用上不如五笔直观。
 
 比如，以下为键盘中字母的排列分布：
