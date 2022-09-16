@@ -8,7 +8,7 @@ schema:
   author:
     - 發明人 郑易里教授
   description: |
-    郑码
+    名郑码巨集
     碼表源自 超集郑码
     敲 ` 鍵進入拼音反查
   dependencies:
