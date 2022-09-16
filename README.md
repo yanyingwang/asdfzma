@@ -29,9 +29,41 @@ Z- X- C- V-  +B N+  M- .< .> /?
 08 07 06 05  24 25  26 .< .> /?
 ```
 
+总的来说，原郑码的字母被重新做了映射，如下：
+```
+'((#\A #\F)
+  (#\B #\D)
+  (#\C #\S)
+  (#\D #\A)
+  (#\E #\V)
+  (#\F #\C)
+  (#\G #\X)
+  (#\H #\Z)
+  (#\I #\H)
+  (#\J #\J)
+  (#\K #\K)
+  (#\L #\L)
+  (#\M #\G)
+  (#\N #\T)
+  (#\O #\R)
+  (#\P #\E)
+  (#\Q #\W)
+  (#\R #\Q)
+  (#\S #\Y)
+  (#\T #\U)
+  (#\U #\I)
+  (#\V #\O)
+  (#\W #\P)
+  (#\X #\B)
+  (#\Y #\N)
+  (#\Z #\M))
+```
+例如，“字”原本的编码为“WDYA”，被重新映射后为“PANF”。
+
+
 ## how to run and gen dict data
-1. run `/home/yanying/mzhengma/zm-to-mzm.rkt` to gen `data.mzm.txt`
-2. then check `README.md` of each sub directories for next.
+* Run `zm-to-mzm.rkt` to gen `data.mzm.txt`
+* Check `README.md` of each sub directories for next.
 
 ## inputing
 ![input-cqm](https://raw.githubusercontent.com/yanyingwang/mzhengma/master/pics/input-cqm.png)
