@@ -12,7 +12,9 @@
   (define ncode/lst
     (for/list ([c code/lst]
                #:do [(define cnum (- (char->integer c) 96))])
-      (char-downcase (hash-ref tables cnum))))
+      (if (char=? c #\^)
+          c
+          (char-downcase (hash-ref tables cnum)))))
   (define ncode (list->string ncode/lst))
   (string-append (string-join (list ncode cn)) "\n")
   )
@@ -27,18 +29,20 @@
    )
   )
 
-(define (write-to-mzm.txt)
+(define (write-data-to-file)
   (define zm-port
-    (open-input-file "data.zm.txt"))
-  (with-output-to-file "data.mzm.txt" #:exists 'replace
+    (open-input-file "data.zml.txt"))
+  (with-output-to-file "data.mzml.txt" #:exists 'replace
     (lambda () (printf "\n")))
-  (with-output-to-file "data.mzm.txt" #:exists 'append
+  (with-output-to-file "data.mzml.txt" #:exists 'append
     (lambda ()
       (let loop ([str (read-line zm-port)])
         (unless (eof-object? str)
           (printf (to-mzm str))
           (loop (read-line zm-port))))))
   )
+
+(write-data-to-file)
 
 
 
