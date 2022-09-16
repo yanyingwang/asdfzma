@@ -65,6 +65,9 @@ Z- X- C- V-  +B N+  M- .< .> /?
 * Run `zm-to-mzm.rkt` to gen `data.mzm.txt`
 * Check `README.md` of each sub directories for next.
 
+## install fonts
+Since Zhengma is able to input more than 60000 chinese characters, your fonts may not able to show them correctly. If so, please go to install (中易宋体)simsun font: https://github.com/yanyingwang/favfonts 
+
 ## inputing
 ![input-cqm](https://raw.githubusercontent.com/yanyingwang/mzhengma/master/pics/input-cqm.png)
 
