@@ -27,8 +27,8 @@ name: mzhengma-large
 version: "2.0"
 sort: original
 columns:
-  - code
   - text
+  - code
 encoder:
   rules:
     - length_equal: 2
