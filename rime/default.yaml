@@ -50,7 +50,7 @@ key_binder:
     - {accept: "Control+Shift+dollar", toggle: simplification, when: always}
     - {accept: "Control+Shift+percent", toggle: extended_charset, when: always}
 menu:
-  page_size: 5
+  page_size: 10
 punctuator:
   full_shape:
     "!": {commit: "！"}
@@ -131,8 +131,8 @@ schema_list:
   #- schema: zmjd          #单字郑码
   #- schema: zmb           #单字郑码
   #- schema: zmbig         #巨集郑码 加入百度输入法中常用词。
-  - schema: mzmbig         #巨集名郑码 加入百度输入法中常用词。
-  - schema: mzheng5ma      #名郑五码
+  - schema: mzhengma-jdqh
+  - schema: mzhengma-large
   #- schema: wubi86
   #- schema: wubi98
   #- schema: luna_pinyin_fluency
