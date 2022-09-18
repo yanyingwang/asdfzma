@@ -1,7 +1,8 @@
 
 # originate from:
-* mzmjdqh https://github.com/acevery/rime-zhengma
+* mzhengma-jdqh https://github.com/acevery/rime-zhengma
 * mzheng5ma https://github.com/acevery/rime-zhengma
+* mzhengma-large https://github.com/fcitx/fcitx5-table-extra
 
 # how to use
 ```
