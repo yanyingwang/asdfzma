@@ -8,7 +8,7 @@
   (define ncode/lst
     (for/list ([c code/lst]
                #:do [(define cnum (- (char->integer c) 96))])
-      (if (char=? c #\^)
+      (if (or (char=? c #\^) (char=? c #\@))
           c
           (char-downcase (hash-ref tables cnum)))))
   (define ncode (list->string ncode/lst))
@@ -27,10 +27,13 @@
 
 (define (write-data-to-file)
   (define zm-port
-    (open-input-file "data.zml.txt"))
-  (with-output-to-file "data.mzml.txt" #:exists 'replace
+    (open-input-file "zhengma-large.data"))
+  (read-line zm-port)
+
+  (with-output-to-file "mzhengma-large.data" #:exists 'replace
     (lambda () (printf "\n")))
-  (with-output-to-file "data.mzml.txt" #:exists 'append
+
+  (with-output-to-file "mzhengma-large.data" #:exists 'append
     (lambda ()
       (let loop ([str (read-line zm-port)])
         (unless (eof-object? str)
