@@ -35,7 +35,7 @@ encoder:
   (lambda ()
     (let loop ([linestr (read-line searching-file)])
       (unless (eof-object? linestr)
-        (if (and (not (eof-object? chstr))
+        (if (and (> (string-length linestr) 3)
                  (string-prefix? linestr (string-join (list chstr "\t") "")))
             (printf "~a\n" linestr)
             (loop (read-line searching-file)))
